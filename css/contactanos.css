@@ -1,25 +1,38 @@
 #contactanos {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  width: 60%;
 }
+
+#contactanos form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #contactanos h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
-#contactanos form {
-  display: flex;
-  flex-direction: column;
+
+#contactanos form textarea {
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
-#contactanos form input,
-textarea {
-  margin: 0.5rem 0 0.5rem 0;
+
+#contactanos form input {
+  flex-grow: 1;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
 
 #contactanos form input[type='submit'] {
+  flex-grow: 0;
   color: var(--colorTexto);
   letter-spacing: 0.2rem;
+  font-weight: 800;
   background-color: brown;
 }

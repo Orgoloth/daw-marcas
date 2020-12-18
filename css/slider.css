@@ -1,6 +1,12 @@
-/* Slider */
+:root {
+  --numSlides: 3;
+  --duracionSlide: 10s;
+}
+
 #slider {
-  overflow-x: hidden;
+  overflow: hidden;
+  max-height: calc(100vh - var(--altoNavegacion) - 1.2rem);
+  box-shadow: 0.2rem 0.2rem 0.2rem black;
 }
 
 #slider figure {
@@ -8,7 +14,7 @@
   flex-wrap: nowrap;
   width: 100%;
   animation-name: animacionSlider;
-  animation-duration: 20s;
+  animation-duration: var(--duracionSlide);
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
 }
@@ -23,19 +29,16 @@
   0% {
     margin-left: 0%;
   }
-  27% {
-    margin-left: 0%;
-  }
-  33% {
+  30% {
     margin-left: -100%;
   }
   60% {
-    margin-left: -100%;
-  }
-  66% {
     margin-left: -200%;
+  }
+  90% {
+    margin-left: -300%;
   }
   100% {
-    margin-left: -200%;
+    margin-left: -300%;
   }
 }

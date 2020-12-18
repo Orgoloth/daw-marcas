@@ -11,13 +11,11 @@
 /* Variables globales */
 :root {
   --colorTexto: antiquewhite;
-  --gradiente1: rgba(2, 0, 36, 1) 0%;
-  --gradiente2: rgba(9, 94, 121, 1) 23%;
+  --gradiente1: rgba(2, 0, 36, 1);
+  --gradiente2: rgba(9, 94, 121, 1);
   --fondoTarjeta: rgba(128, 128, 128, 0.432);
   --altoNavegacion: 6rem;
   --anchoMaximo: 80%;
-  --numSlides: 3;
-  --numCallToAction: 3;
 }
 
 /* Reset CSS */
@@ -31,7 +29,7 @@
 /* Configuraciones generales */
 body {
   background: var(--gradiente1);
-  background: linear-gradient(135deg, var(--gradiente1), var(--gradiente2));
+  background: linear-gradient(315deg, var(--gradiente1) 0%, var(--gradiente2) 50%);
   color: var(--colorTexto);
 }
 
@@ -49,12 +47,9 @@ header,
 section,
 footer {
   max-width: var(--anchoMaximo);
-  margin: 0 auto 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 section {
-  margin-bottom: 1rem;
-  max-height: calc(100vh - var(--altoNavegacion) - 1rem);
-  overflow: hidden;
   border-radius: 1rem;
 }

@@ -1,31 +1,27 @@
+:root {
+  --minimoAnchoLlamada: max(350px, 25vw);
+}
+
 #callToAction {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--minimoAnchoLlamada), 1fr));
+  grid-gap: 1rem;
 }
 
 #callToAction article {
-  flex-grow: 5;
-  flex-basis: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  /* max-width: calc(96% / var(--numCallToAction)); */
-  /* min-width: 25rem; */
+  width: 100%;
+  min-width: var(--minimoAnchoLlamada);
   border: 1px solid var(--colorTexto);
   border-radius: 1rem;
+  text-align: center;
   padding: 1rem;
   margin-right: 0.5rem;
   background-color: var(--fondoTarjeta);
   color: black;
-}
-#callToAction article:last-child {
-  /*Con esto conseguimos alinear correctamente si estan todos los articulos en la misma fila
-  * Pendiente averiguar como alinear correctamente la parte derecha si alguno salta de fila
-  */
-  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #callToAction article h2 {
@@ -46,6 +42,7 @@
 }
 
 #callToAction article .descripcion {
+  flex-grow: 1;
   font-size: large;
   color: tomato;
   margin-bottom: 2rem;
