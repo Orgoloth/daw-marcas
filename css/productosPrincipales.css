@@ -1,0 +1,49 @@
+#productosPrincipales {
+  display: flex;
+  flex-direction: column;
+}
+
+#productosPrincipales article {
+  position: relative;
+  border: 1px solid var(--colorTexto);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--fondoTarjeta);
+  color: black;
+}
+
+#productosPrincipales article img {
+  float: left;
+  max-width: 30%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem 0 0 1rem;
+  margin-right: 1rem;
+}
+
+#productosPrincipales article h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+#productosPrincipales article p {
+  line-height: 1.5rem;
+  text-indent: 2rem;
+  text-align: justify;
+  padding-right: 1rem;
+}
+
+#productosPrincipales article a {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  background-color: tomato;
+}
+#productosPrincipales article a:hover {
+  text-decoration: none;
+  background-color: brown;
+}

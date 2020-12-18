@@ -1,0 +1,41 @@
+/* Slider */
+#slider {
+  overflow-x: hidden;
+}
+
+#slider figure {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  animation-name: animacionSlider;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+#slider figure img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes animacionSlider {
+  0% {
+    margin-left: 0%;
+  }
+  27% {
+    margin-left: 0%;
+  }
+  33% {
+    margin-left: -100%;
+  }
+  60% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}

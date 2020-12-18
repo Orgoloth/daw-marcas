@@ -1,0 +1,9 @@
+.contenedor-scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+
+.scroll {
+  scroll-snap-align: start;
+}

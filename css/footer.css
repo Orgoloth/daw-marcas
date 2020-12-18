@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer nav {
+  position: relative;
+}
+
+footer nav i {
+  font-size: 2rem;
+  margin: 0 1rem 1rem 0;
+}
+
+footer address {
+  text-align: end;
+}

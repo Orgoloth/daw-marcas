@@ -1,0 +1,25 @@
+#contactanos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#contactanos h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#contactanos form {
+  display: flex;
+  flex-direction: column;
+}
+#contactanos form input,
+textarea {
+  margin: 0.5rem 0 0.5rem 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+#contactanos form input[type='submit'] {
+  color: var(--colorTexto);
+  letter-spacing: 0.2rem;
+  background-color: brown;
+}

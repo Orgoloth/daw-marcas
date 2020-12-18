@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('./scroll.css');
+@import url('./navegacion.css');
+@import url('./slider.css');
+@import url('./callToAction.css');
+@import url('./productosPrincipales.css');
+@import url('./contactanos.css');
+@import url('./footer.css');
+
+/* Variables globales */
+:root {
+  --colorTexto: antiquewhite;
+  --gradiente1: rgba(2, 0, 36, 1) 0%;
+  --gradiente2: rgba(9, 94, 121, 1) 23%;
+  --fondoTarjeta: rgba(128, 128, 128, 0.432);
+  --altoNavegacion: 6rem;
+  --anchoMaximo: 80%;
+  --numSlides: 3;
+  --numCallToAction: 3;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Configuraciones generales */
+body {
+  background: var(--gradiente1);
+  background: linear-gradient(135deg, var(--gradiente1), var(--gradiente2));
+  color: var(--colorTexto);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--colorTexto);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header,
+section,
+footer {
+  max-width: var(--anchoMaximo);
+  margin: 0 auto 0 auto;
+}
+
+section {
+  margin-bottom: 1rem;
+  max-height: calc(100vh - var(--altoNavegacion) - 1rem);
+  overflow: hidden;
+  border-radius: 1rem;
+}
