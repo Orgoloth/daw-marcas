@@ -29,7 +29,7 @@
 /* Configuraciones generales */
 body {
   background: var(--gradiente1);
-  background: linear-gradient(315deg, var(--gradiente1) 0%, var(--gradiente2) 50%);
+  background: linear-gradient(135deg, var(--gradiente1), var(--gradiente2));
   color: var(--colorTexto);
 }
 
