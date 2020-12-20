@@ -18,3 +18,23 @@ header nav a {
   flex-grow: 1;
   margin-right: 2rem;
 }
+
+
+/* Pantallas moviles */
+@media (max-width: 480px) {
+  header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  header nav a{
+    margin-right: 0;
+    margin-bottom: .5rem;
+  }
+  
+}
+
+/* Pantallas tablet */
+@media (max-width: 768px) {
+  
+}

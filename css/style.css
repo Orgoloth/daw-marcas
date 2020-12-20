@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('./paleta1.css');
+
 @import url('./scroll.css');
 @import url('./navegacion.css');
 @import url('./slider.css');
@@ -8,12 +10,9 @@
 @import url('./contactanos.css');
 @import url('./footer.css');
 
+
 /* Variables globales */
 :root {
-  --colorTexto: antiquewhite;
-  --gradiente1: rgba(2, 0, 36, 1);
-  --gradiente2: rgba(9, 94, 121, 1);
-  --fondoTarjeta: rgba(128, 128, 128, 0.432);
   --altoNavegacion: 6rem;
   --anchoMaximo: 70%;
 }
@@ -28,15 +27,15 @@
 
 /* Configuraciones generales */
 body {
-  background: var(--gradiente1);
-  background: linear-gradient(135deg, var(--gradiente1), var(--gradiente2));
+  background: var(--color1);
+  background: linear-gradient(135deg, var(--color1), var(--color2));
   color: var(--colorTexto);
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  color: var(--colorTexto);
+  color: var(--color5);
 }
 
 a:hover {
@@ -56,4 +55,14 @@ footer {
 
 section {
   border-radius: 1rem;
+}
+
+/* Pantallas moviles */
+@media (max-width: 480px) {
+  
+}
+
+/* Pantallas tablet */
+@media (max-width: 768px) {
+  
 }

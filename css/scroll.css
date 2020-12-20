@@ -7,3 +7,19 @@
 .scroll {
   scroll-snap-align: start;
 }
+
+/* Pantallas moviles */
+@media (max-width: 480px) {
+  .contenedor-scroll {
+    height: initial;
+    overflow-y: initial;
+    scroll-snap-type: initial;
+  }
+  .scroll {
+    scroll-snap-align: initial;
+  }
+}
+
+/* Pantallas tablet */
+@media (max-width: 768px) {
+}
