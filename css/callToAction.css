@@ -1,5 +1,5 @@
 :root {
-  --minimoAnchoLlamada: max(350px, 25vw);
+  --minimoAnchoLlamada: max(300px, 20vw);
 }
 
 #callToAction {

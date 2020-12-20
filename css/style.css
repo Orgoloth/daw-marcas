@@ -15,7 +15,7 @@
   --gradiente2: rgba(9, 94, 121, 1);
   --fondoTarjeta: rgba(128, 128, 128, 0.432);
   --altoNavegacion: 6rem;
-  --anchoMaximo: 80%;
+  --anchoMaximo: 70%;
 }
 
 /* Reset CSS */
@@ -41,6 +41,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+p {
+  text-align: justify;
 }
 
 header,
