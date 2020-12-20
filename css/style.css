@@ -59,7 +59,6 @@ section {
 /* Pantallas moviles */
 @media (max-width: 480px) {
   :root {
-    --altoNavegacion: 3rem;
     --anchoMaximo: 90%;
   }
 }
