@@ -70,7 +70,7 @@
 @media (max-width: 480px) {
   :root{
     
-  --minimoAnchoLlamada: max(200px, 20vw);
+  --minimoAnchoLlamada: max(250px, 20vw);
   }
 }
 
