@@ -65,3 +65,16 @@
   transform: scale(1.2);
   transition: 3s;
 }
+
+/* Pantallas moviles */
+@media (max-width: 480px) {
+  :root{
+    
+  --minimoAnchoLlamada: max(200px, 20vw);
+  }
+}
+
+/* Pantallas tablet */
+@media (max-width: 768px) {
+  
+}

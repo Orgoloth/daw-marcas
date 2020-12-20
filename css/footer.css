@@ -12,6 +12,6 @@ footer nav i {
   margin: 0 1rem 1rem 0;
 }
 
-footer address {
-  text-align: end;
+footer address p{
+  text-align: right;
 }
