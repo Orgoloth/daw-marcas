@@ -1,0 +1,38 @@
+/* Navegación */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: var(--altoNavegacion);
+}
+
+header img {
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+header nav a {
+  flex-grow: 1;
+  margin-right: 2rem;
+  color: var(--color3);
+}
+
+/* Pantallas moviles */
+@media (max-width: 480px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  header nav a {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Pantallas tablet */
+@media (max-width: 768px) {
+}

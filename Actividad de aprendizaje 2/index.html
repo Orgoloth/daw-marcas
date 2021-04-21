@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/bulb-28416/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      defer
+      src="https://kit.fontawesome.com/820c30c621.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tu agencia de desarrollo web</title>
+  </head>
+  <body>
+    <div class="contenedor-scroll">
+      <header class="scroll">
+        <img
+          src="./img/pexels-led-supermarket-577514.jpg"
+          alt=""
+          class="logo"
+        />
+        <nav>
+          <a href="#">Conócenos</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Productos</a>
+        </nav>
+      </header>
+      <main>
+        <section id="alta_cliente">
+          <h2>¿Desea darse de alta como cliente?</h2>
+
+          <form id="form_alta_cliente" class="form_alta">
+            <div id="form_alta_cliente_messages"></div>
+            <div class="form_alta_group">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                required
+                minlength="3"
+                maxlength="50"
+              />
+            </div>
+            <div class="form_alta_group">
+              <label for="apellidos">Apellidos</label>
+              <input
+                type="text"
+                name="apellidos"
+                required
+                minlength="3"
+                maxlength="50"
+              />
+            </div>
+            <div class="form_alta_group">
+              <label for="direccion">Dirección</label>
+              <input
+                type="text"
+                name="direccion"
+                required
+                minlength="3"
+                maxlength="50"
+              />
+            </div>
+            <div class="form_alta_group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required
+              />
+            </div>
+
+            <input
+              type="submit"
+              value="¡Darme de alta!"
+              class="form_alta_button"
+            />
+          </form>
+        </section>
+        <section id="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1772.999955828213!2d-0.8789987321993332!3d41.63805196522456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914e28e0460b7%3A0x927db7960e5b215e!2sAv.%20Tenor%20Fleta%2C%2063%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1619026682609!5m2!1ses!2ses"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </section>
+
+        <section id="slider" class="scroll">
+          <figure>
+            <img src="./img/pexels-pixabay-256514.jpg" alt="" />
+            <img src="./img/pexels-lukas-684363.jpg" alt="" />
+            <img src="./img/pexels-pixabay-355952.jpg" alt="" />
+            <img src="./img/pexels-pixabay-256514.jpg" alt="" />
+          </figure>
+        </section>
+        <section id="callToAction" class="scroll">
+          <article>
+            <h2>Web estática</h2>
+            <img src="./img/pexels-pixabay-256514.jpg" alt="Web estática" />
+            <p class="precio">50 €</p>
+            <p class="descripcion">
+              Contrata ya el desarrollo de tu página web.
+              <br />Nosotros nos ocupamos de todo para que estes visible en
+              internet en el menor tiempo posible., utilizando las últimas
+              tecnologías y tendencias de diseño.
+            </p>
+            <a href="#">¿Empezamos?</a>
+          </article>
+          <article>
+            <h2>Comercio online</h2>
+            <img src="./img/pexels-lukas-684363.jpg" alt="Comercio online" />
+            <p class="precio">¡SOLO 60 €!</p>
+            <p class="descripcion">
+              Ofrecemos una solución completa para gestionar las ventas de tu
+              negocio. Tus clientes podrán conocer tus productos y comprarlos de
+              una forma ágil y sencilla.
+              <br />Ademas, nos ocuparemos de que tu sitio se mantenga
+              actualizado con tus últimos productos, cambios recientes y nuevas
+              tecnologías.
+            </p>
+            <a href="#">¿Nos ponemos en marcha?</a>
+          </article>
+          <article>
+            <h2>Consultoría de Marketing</h2>
+            <img
+              src="./img/pexels-pixabay-355952.jpg"
+              alt="Consultoría de Marketing"
+            />
+            <p class="precio">200 €</p>
+            <p class="descripcion">
+              ¿Tienes una idea de negocio pero no sabes como desarrollarla?
+              <br />¡No te preocupes! <br />
+              Nosotros te ayudamos analizando tu idea, el mercado adecuado y
+              todo lo necesario para que idea de negocio triunfe
+            </p>
+            <a href="#">¿Te ayudamos con tu negocio?</a>
+          </article>
+        </section>
+        <section id="productosPrincipales" class="scroll">
+          <article>
+            <h2>Web estática</h2>
+            <img src="./img/pexels-pixabay-256514.jpg" alt="" />
+            <p>
+              Contrata con nosotros el desarrollo de tu página web <br />Somos
+              expertos en las tecnologías mas actuales para proporcionarte una
+              página a la altura de tus necesidades. <br />Nos ocuparemos de
+              diseñar una web que haga llegar a tus visitantes de forma clara tu
+              idea, ayudandote a darle forma a tus ideas
+            </p>
+            <a href="#">¿Deseas saber mas?</a>
+          </article>
+          <article>
+            <img src="./img/pexels-lukas-684363.jpg" alt="" />
+            <h2>Comercio online</h2>
+            <p>
+              En un mundo cada vez mas dinámico y conectado, estar cerca de tus
+              clientes, a golpe de click, es vital para el crecimiento de una
+              empresa.
+              <br />¡No te quedes atrás! <br />Podemos ayudarte a llevar tu
+              negocio online, de forma que tus clientes tengan todas las
+              comodidades y que puedan conocer tus productos de forma ágil.
+              <br />Contarás con las últimas tecnologías, una buena seguridad
+              para las trasacciones online, y un soporte técnico siempre que lo
+              necesites.
+            </p>
+            <a href="#">¿Deseas saber mas?</a>
+          </article>
+          <article>
+            <img src="./img/pexels-pixabay-355952.jpg" alt="" />
+            <h2>Consultoría de marketing</h2>
+            <p>
+              A veces no resulta facil llevar una buena idea desde el concepto
+              hasta el mundo real. Hay que dar muchos pasos para asegurarse el
+              éxito.
+              <br />Mientras tu te centras en lo que sabes hacer, dejanos
+              ayudarte en el camino hacia la implementación final. <br />Podemos
+              ayudarte diseñando un plan de marketing que te empuje hacia el
+              éxito, incluyendo planes para la visibilidad en redes sociales y
+              una buena estrategia de publicidad.
+            </p>
+            <a href="#">¿Deseas saber mas?</a>
+          </article>
+        </section>
+        <section id="contactanos" class="scroll">
+          <h2>¡Contacta con nosotros!</h2>
+          <form>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Indícanos tu nombre"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Indícanos tu email de contacto"
+            />
+            <textarea
+              name="consulta"
+              placeholder="¿En qué podemos ayudarte?"
+            ></textarea>
+            <input type="submit" value="¡Envíanos tu consulta!" />
+          </form>
+        </section>
+      </main>
+      <footer>
+        <nav>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </nav>
+        <address>
+          <p>Avenida Tenor Fleta 63</p>
+          <p>Zaragoza</p>
+          <p>645473344</p>
+        </address>
+      </footer>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

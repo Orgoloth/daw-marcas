@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('./paleta1.css');
+
+@import url('./scroll.css');
+@import url('./navegacion.css');
+@import url('./slider.css');
+@import url('./callToAction.css');
+@import url('./productosPrincipales.css');
+@import url('./contactanos.css');
+@import url('./footer.css');
+
+/* Variables globales */
+:root {
+  --altoNavegacion: 6rem;
+  --anchoMaximo: 70%;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Configuraciones generales */
+body {
+  background: var(--color1);
+  background: linear-gradient(135deg, var(--color1), var(--color2));
+  color: var(--colorTexto);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color5);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: justify;
+}
+
+header,
+section,
+footer {
+  max-width: var(--anchoMaximo);
+  margin: 0 auto 1rem auto;
+}
+
+section {
+  border-radius: 1rem;
+}
+
+/* Pantallas moviles */
+@media (max-width: 480px) {
+  :root {
+    --anchoMaximo: 90%;
+  }
+}
+
+/* Pantallas tablet */
+@media (max-width: 768px) {
+}
