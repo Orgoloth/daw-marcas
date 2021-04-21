@@ -31,9 +31,15 @@ export class FormAltaGestion {
 
   /**
    * Permitimos realizar la accion de alta
+   * Ademas, como efecto adicional, mostramos una alerta personalizada por JavaScript mediante SweetAlert2
    */
   altaFormSubmit() {
-    alert('form enviado');
+    Swal.fire({
+      title: '¡Bienvenido!',
+      text: `¿${this.altaForm.nombre.value}, deseas continuar? `,
+      icon: 'success',
+      confirmButtonText: '¡Si, claro!',
+    });
   }
 
   /**

@@ -9,6 +9,8 @@
 @import url('./productosPrincipales.css');
 @import url('./contactanos.css');
 @import url('./footer.css');
+@import url('./altaCliente.css');
+@import url('./map.css');
 
 /* Variables globales */
 :root {
