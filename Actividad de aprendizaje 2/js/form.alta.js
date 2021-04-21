@@ -25,7 +25,7 @@ export class FormAltaGestion {
       this.checkAddress();
       this.checkEmail();
 
-      if (this.checkNoMessages()) this.altaFormSubmit();
+      this.checkNoMessages() && this.altaFormSubmit();
     });
   }
 
@@ -56,7 +56,6 @@ export class FormAltaGestion {
    * @param message Mensaje a insertar
    */
   insertMessage(message) {
-    // Insertamos un nuevo mensaje
     const newP = document.createElement('p');
     newP.innerHTML = message;
     this.messagesDiv.appendChild(newP);
@@ -76,7 +75,7 @@ export class FormAltaGestion {
    */
   checkName() {
     const words = this.altaForm.nombre.value.split(' ');
-    if (!words.every(this.isCapitalFirstLetter))
+    !words.every(this.isCapitalFirstLetter) &&
       this.insertMessage(
         'Todas las palabras del nombre deben empezar con una letra mayúscula'
       );
@@ -89,12 +88,12 @@ export class FormAltaGestion {
   checkLastNames() {
     const words = this.altaForm.apellidos.value.split(' ');
 
-    if (!words.every(this.isCapitalFirstLetter))
+    !words.every(this.isCapitalFirstLetter) &&
       this.insertMessage(
         'Todas las palabras del apellido deben empezar con una letra mayúscula'
       );
 
-    if (words.length < 2)
+    words.length < 2 &&
       this.insertMessage('Debe insertar al menos dos apellidos');
   }
 
@@ -103,9 +102,8 @@ export class FormAltaGestion {
    */
   checkAddress() {
     const words = this.altaForm.direccion.value.split(' ');
-    if (!words.every(isNaN)) {
+    !words.every(isNaN) &&
       this.insertMessage('La direccion debe tener un numero de portal');
-    }
   }
 
   /**
@@ -113,7 +111,7 @@ export class FormAltaGestion {
    */
   checkEmail() {
     const words = this.altaForm.email.value.split('@');
-    if (words[1] != 'sanvalero.com')
+    words[1] != 'sanvalero.com' &&
       this.insertMessage('El dominio del correo debe ser sanvalero.com');
   }
 
