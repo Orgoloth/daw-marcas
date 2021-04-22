@@ -62,6 +62,12 @@ section {
   border-radius: 1rem;
 }
 
+.error_messages {
+  color: brown;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* Pantallas moviles */
 @media (max-width: 480px) {
   :root {

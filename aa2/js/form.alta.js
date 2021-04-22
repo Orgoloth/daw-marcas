@@ -20,12 +20,13 @@ export class FormAltaGestion {
       event.preventDefault();
 
       this.clearMessages();
+
       this.checkName();
       this.checkLastNames();
       this.checkAddress();
       this.checkEmail();
 
-      this.checkNoMessages() && this.altaFormSubmit();
+      this.isMessagesListEmpty() && this.altaFormSubmit();
     });
   }
 
@@ -56,17 +57,17 @@ export class FormAltaGestion {
    * @param message Mensaje a insertar
    */
   insertMessage(message) {
-    const newP = document.createElement('p');
-    newP.innerHTML = message;
-    this.messagesDiv.appendChild(newP);
+    const messageHtmlElement = document.createElement('p');
+    messageHtmlElement.innerHTML = message;
+    this.messagesDiv.appendChild(messageHtmlElement);
   }
 
   /**
    * Comprobamos que no haya mensajes pendientes
    *
-   * @returns si no hay mensajes pendientes
+   * @returns true si no hay mensajes pendientes
    */
-  checkNoMessages() {
+  isMessagesListEmpty() {
     return this.messagesDiv.childNodes.length === 0;
   }
 
@@ -87,7 +88,6 @@ export class FormAltaGestion {
    */
   checkLastNames() {
     const words = this.altaForm.apellidos.value.split(' ');
-
     !words.every(this.isCapitalFirstLetter) &&
       this.insertMessage(
         'Todas las palabras del apellido deben empezar con una letra mayúscula'
