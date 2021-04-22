@@ -1,6 +1,6 @@
 :root {
   --numSlides: 3;
-  --duracionSlide: 10s;
+  --duracionSlide: 20s;
 }
 
 #slider {

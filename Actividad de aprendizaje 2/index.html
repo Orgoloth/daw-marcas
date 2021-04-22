@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="contenedor-scroll">
-      <header >
+      <header>
         <img
           src="./img/pexels-led-supermarket-577514.jpg"
           alt=""
@@ -32,6 +32,41 @@
       </header>
 
       <main>
+        <section id="presentacion">
+          <article class="presentacion_item">
+            <img src="./img/1.jpg" alt="1" />
+            <p>Producto 1</p>
+          </article>
+          <article class="presentacion_item">
+            <img src="./img/2.jpg" alt="2" />
+            <p>Producto 2</p>
+          </article>
+          <article class="presentacion_item">
+            <img src="./img/3.jpg" alt="3" />
+            <p>Producto 3</p>
+          </article>
+          <article class="presentacion_item">
+            <img src="./img/4.jpg" alt="4" />
+            <p>Producto 4</p>
+          </article>
+          <article class="presentacion_item">
+            <img src="./img/5.jpg" alt="5" />
+            <p>Producto 5</p>
+          </article>
+          <article class="presentacion_item">
+            <img src="./img/6.jpg" alt="6" />
+            <p>Producto 6</p>
+          </article>
+          <article class="presentacion_item">
+            <img src="./img/7.jpg" alt="7" />
+            <p>Producto 7</p>
+          </article>
+          <article class="presentacion_item">
+            <img src="./img/8.jpg" alt="8" />
+            <p>Producto 8</p>
+          </article>
+        </section>
+
         <section id="alta_cliente">
           <form id="form_alta_cliente" class="form_alta">
             <h2>¿Desea darse de alta como cliente?</h2>
@@ -84,15 +119,7 @@
           </form>
         </section>
 
-        <section id="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1772.999955828213!2d-0.8789987321993332!3d41.63805196522456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914e28e0460b7%3A0x927db7960e5b215e!2sAv.%20Tenor%20Fleta%2C%2063%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1619026682609!5m2!1ses!2ses"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </section>
-
-        <section id="slider" >
+        <section id="slider">
           <figure>
             <img src="./img/pexels-pixabay-256514.jpg" alt="" />
             <img src="./img/pexels-lukas-684363.jpg" alt="" />
@@ -101,7 +128,7 @@
           </figure>
         </section>
 
-        <section id="callToAction" >
+        <section id="callToAction">
           <article>
             <h2>Web estática</h2>
             <img src="./img/pexels-pixabay-256514.jpg" alt="Web estática" />
@@ -145,7 +172,7 @@
           </article>
         </section>
 
-        <section id="productosPrincipales" >
+        <section id="productosPrincipales">
           <article>
             <h2>Web estática</h2>
             <img src="./img/pexels-pixabay-256514.jpg" alt="" />
@@ -191,7 +218,7 @@
           </article>
         </section>
 
-        <section id="contactanos" >
+        <section id="contactanos">
           <h2>¡Contacta con nosotros!</h2>
           <form>
             <input
@@ -211,6 +238,14 @@
             <input type="submit" value="¡Envíanos tu consulta!" />
           </form>
         </section>
+
+        <section id="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1772.999955828213!2d-0.8789987321993332!3d41.63805196522456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914e28e0460b7%3A0x927db7960e5b215e!2sAv.%20Tenor%20Fleta%2C%2063%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1619026682609!5m2!1ses!2ses"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </section>
       </main>
 
       <footer>
@@ -227,7 +262,9 @@
       </footer>
     </div>
 
+    <!-- Importamos libreria SweetAlert2 para efectos JavaScript -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Enlazamos nuestro script -->
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

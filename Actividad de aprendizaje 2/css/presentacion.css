@@ -1,0 +1,44 @@
+:root {
+  --item_size: 12rem;
+}
+
+#presentacion {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.presentacion_item {
+  position: relative;
+  width: var(--item_size);
+  height: var(--item_size);
+  padding: 0.2rem;
+  margin: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentacion_item img {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.presentacion_item p {
+  display: none;
+}
+
+.gris img {
+  filter: grayscale(100%) blur(0.2rem);
+}
+
+.gris p {
+  display: block;
+  color: var(--color3);
+  font-weight: bolder;
+}

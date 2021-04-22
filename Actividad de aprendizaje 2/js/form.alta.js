@@ -83,7 +83,7 @@ export class FormAltaGestion {
 
   /**
    * Comprobamos que tenga la primera letra de cada palabra en mayuscula
-   * Comprobamos que se introduzcan al menos dis apellidos
+   * Comprobamos que se introduzcan al menos dos apellidos
    */
   checkLastNames() {
     const words = this.altaForm.apellidos.value.split(' ');
