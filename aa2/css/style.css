@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://unpkg.com/swiper/swiper-bundle.min.css');
 
 @import url('./paleta1.css');
 
@@ -12,6 +13,7 @@
 @import url('./altaCliente.css');
 @import url('./map.css');
 @import url('./presentacion.css');
+@import url('./swiper.css');
 
 /* Variables globales */
 :root {
@@ -29,6 +31,7 @@
 
 /* Configuraciones generales */
 body {
+  position: relative;
   background: var(--color1);
   background: linear-gradient(135deg, var(--color1), var(--color2));
   color: var(--colorTexto);
